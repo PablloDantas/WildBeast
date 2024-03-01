@@ -1,0 +1,9 @@
+body {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header     header      header"
+    "sidenav    conteudo    anuncios"
+    "footer     footer      footer"
+    / 300px 1fr 300px;
+}
