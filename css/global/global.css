@@ -1,13 +1,15 @@
 :root {
   --c0: #ffffff;
-  --c1: #b780f1;
+  --c1: #b07dfb;
+  --c2: rgba(0, 0, 0, 0.7);
+  --c3: #8844ee;
   --c99: #000000;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Vollkorn", sans-serif;
+  font-family: "Vollkorn", serif;
 }
 
 a {
