@@ -1,0 +1,54 @@
+.sidenav {
+  grid-area: sidenav;
+  padding-top: 30px;
+  background-color: var(--c0);
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  transition: 0.1s ease-out;
+}
+
+.sidenav ul li a:hover {
+  background: var(--c3);
+}
+
+@keyframes seta {
+  from {
+    right: 60px;
+  }
+  to {
+    right: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .sidenav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    position: relative;
+  }
+  .sidenav::after {
+    content: "→";
+    position: absolute;
+    top: -5px;
+    right: 60px;
+    color: rgba(0, 0, 0, 0.5);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+  .sidenav ul {
+    padding: 15px 0px 0px 30px;
+    display: flex;
+    gap: 30px;
+  }
+  .sidenav ul li {
+    flex: 1 0 60px;
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  background: linear-gradient(135deg, var(--c3), var(--c1));
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.header img {
+  max-width: 200px;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header nav a {
+  display: inline-block;
+  padding: 10px;
+  color: var(--c0);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.header nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 800px) {
+  .header {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .header > a {
+    display: flex;
+    justify-content: center;
+  }
+  .header nav {
+    grid-row: 2;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,13 @@
+/* Global */
+@import "./global/global.css";
+
+/* Utilitários */
+@import "./utilitarios/fontes.css";
+
+/* Home */
+@import "./home/home.css";
+@import "./home/header.css";
+@import "./home/sidenav.css";
+@import "./home/anuncios.css";
+@import "./home/footer.css";
+@import "./home/conteudo.css";
